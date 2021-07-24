@@ -90,7 +90,10 @@ text-decoration: none;
 }
 /* Кнопка */
 .banner .button{
+  padding: 10px 32px;
   color: var(--title-text);
+  width: 200;
+  border-radius: 4px;
   background-color: var(--prymary-background-color);  
 font-weight: 700;
 font-size: 16px;
