@@ -15,6 +15,8 @@ body {
 
 ul {
   list-style: none;
+  margin-top: 0;
+  margin-bottom: 40;
 }
 /* цвет основного текста #212121 */
 
@@ -28,8 +30,21 @@ ul {
 /* #000000  цвет logo */
 /*  fon footer 2F303A */
 
+.section{
+  padding: 94px 0;
+}
+
+.container{
+ max-width: 1200px;
+ padding-left: 15px;
+ padding-right: 15px;
+ margin: 0 auto;
+ outline: 2px solid red;
+}
+
 .page-header{
   background-color: var(--accent-new-color);
+  border-bottom: 1px solid #ECECEC;
 }
 
 .logo {
@@ -78,9 +93,13 @@ text-decoration: none;
 
 /* Банер */
 .banner{
+  text-align: center;  
   background:  #2F303A;
+  padding: 200px 0;
 }
 .banner .banner-subtitle{
+  margin-top: 0;
+  margin-bottom: 0;
  font-weight: 900;
  font-size: 44px;
  line-height: 1.36;
@@ -90,28 +109,40 @@ text-decoration: none;
 }
 /* Кнопка */
 .banner .button{
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px 32px;
   color: var(--title-text);
-  width: 200;
+  width: 200px;
   border-radius: 4px;
   background-color: var(--prymary-background-color);  
-font-weight: 700;
-font-size: 16px;
-line-height: 1.87;
-display: flex;
-align-items: center;
-text-align: center;
-cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;  
+  cursor: pointer;
 }
 
-.button.primary{
+.button.primary{ 
   color: var(--accent-new-color);
   background-color: var(--accent-color);
 }
 
 /* Организхационные моменты */
+
+.visually {
+  position: absolute;
+  clip: rect(0000);
+  width: 1px;
+  right: 1px;
+  margin: 1px;
+}
+
 .features {
   background: #FFFFFF;
+  padding-bottom: 0;
 }
  .features-title {
   font-size: 14px;
@@ -123,7 +154,7 @@ cursor: pointer;
 
  .features-description {
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -174,6 +205,8 @@ color: var(--primary-text-color);
 
 .footer{
   background-color: #2F303A;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo{
   color:var(--accent-new-color);
@@ -231,6 +264,8 @@ text-decoration: none;
 
 .project .project-link{
   text-decoration: none;
+  border: 1px solid #EEEEEE;
+  display: block;
 }
 .project .project-title{
     font-weight: 700;
